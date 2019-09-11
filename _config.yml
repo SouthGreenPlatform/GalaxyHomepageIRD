@@ -13,25 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: South Green Trainings Web Site
-email: christine.tranchant@ird.fr
-description: Bioinformatics trainings, Linux, HPC, NGS, NGS workflow manager, TOGGLe, galaxy
+title: Galaxy South Green
+email: galaxydev@cirad.fr
+description: Welcome to Galaxy South Green
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://southgreenplatform.github.io/trainings/" # the base hostname & protocol for your site, e.g. http://example.com
-repository_url: "https://github.com/SouthGreenPlatform/trainings.git"
+url: "https://marilyne.summo.github.io/trainings/" # the base hostname & protocol for your site, e.g. http://example.com
+repository_url: "https://github.com/MarilyneSummo/trainings.git"
 version: 0.1
 
 
 # authors
 authors:
-  ravel:
-    name: Sébastien RAVEL
-    display_name: Sebastien RAVEL
-    email: sebastien.ravel@cirad.fr
-  tranchant:
-    name: Christine Tranchant-Dubreuil
-    display_name: Christine Tranchant-Dubreuil
-    email: christine.tranchant@ird.fr
+  marilyne :
+    name: Marilyne Summo
+    display_name: Marilyne Summo
+    email: marilyne.summo@cirad.fr
 
 # Build settings
 theme:  minima
