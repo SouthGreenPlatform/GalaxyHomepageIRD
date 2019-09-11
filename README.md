@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "home"
-permalink: /
+permalink: /home/
 tags: [ South Green trainings perl linux  bash ]
 description: Home page
 ---
