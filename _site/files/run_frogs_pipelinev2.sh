@@ -8,7 +8,7 @@ tmp=$PWD
 frogs_dir="/usr/local/Miniconda2-1.0/envs/frogs/share/FROGS-2.0.1/" # pour fichier pynast
 samplefile="${tmp}/summary.txt" ####### A MODIFIER/VERIFIER
 db="${tmp}/silva_123_16S.fasta" #######
-java_mem=20
+java_mem=5
 
 
 # ------------------------------------------------------------- set environment
@@ -43,7 +43,7 @@ module load bioinfo/R/3.5.1
 #      420 \
 #      OUTPUT \
 #      /home/orjuela/TEST-FROGS/fromGitExemple/test_dataset.tar.gz
-#      4
+#      2
 
 
 # from user
@@ -295,7 +295,7 @@ r_import_data.py  \
 echo "Step r_composition $(date)"
 
 r_composition.py  \
-    --varExp Color \
+    --varExp env_material \
     --taxaRank1 Kingdom \
     --taxaSet1 Bacteria \
     --taxaRank2 Phylum \
@@ -310,7 +310,7 @@ r_composition.py  \
 echo "Step r_alpha_diversity $(date)"
 
 r_alpha_diversity.py  \
- --varExp Color \
+ --varExp env_material \
  --rdata "${out_dir}/11-phylo_import.Rdata" \
  --alpha-measures Observed Chao1 Shannon \
  --alpha-out "${out_dir}/13-phylo_alpha_div.tsv" \
@@ -324,7 +324,7 @@ r_alpha_diversity.py  \
 echo "Step r_beta_diversity $(date)"
 
 r_beta_diversity.py  \
-    --varExp Color \
+    --varExp env_material \
     --distance-methods cc,unifrac \
     --rdata "${out_dir}/11-phylo_import.Rdata" \
     --matrix-outdir "${out_dir}" \
@@ -338,7 +338,7 @@ r_beta_diversity.py  \
 # echo "Step r_structure $(date)"
 
 # r_structure.py  \
-#     --varExp Color \
+#     --varExp env_material \
 #     --ordination-method MDS \
 #     --rdata "${out_dir}/11-phylo_import.Rdata" \
 #     --distance-matrix "${out_dir}/Unifrac.tsv" \
@@ -352,7 +352,7 @@ r_beta_diversity.py  \
 echo "Step r_clustering $(date)"
 
 r_clustering.py  \
-    --varExp Color \
+    --varExp env_material \
     --rdata "${out_dir}/11-phylo_import.Rdata" \
     --distance-matrix "${out_dir}/Unifrac.tsv" \
     --html "${out_dir}/16-phylo_clutering.html" \
@@ -365,7 +365,7 @@ r_clustering.py  \
 echo "Step r_manova $(date)"
 
 r_manova.py  \
-    --varExp Color \
+    --varExp env_material \
     --rdata "${out_dir}/11-phylo_import.Rdata" \
     --distance-matrix "${out_dir}/Unifrac.tsv" \
     --html "${out_dir}/17-phylo_manova.html" \
