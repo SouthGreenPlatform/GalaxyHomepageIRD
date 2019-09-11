@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Galaxy South Green"
-permalink: /GalaxySouthGreen/
+permalink: /galaxysouthgreen/
 tags: [ galaxy  southgreen]
 description: Galaxy Sounth Green welcome page
 ---
