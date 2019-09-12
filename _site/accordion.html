@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>TOGGLe Training</title>
+    <title>Galaxy South Green</title>
     <meta name="description" content="Welcome to Galaxy South Green">
-    <meta name="description" content="Linux page">
+    <meta name="description" content="Galaxy South Green welcome page">
     
     <meta name="author" content=" Marilyne Summo -- marilyne.summo@cirad.fr">
     
@@ -96,93 +96,83 @@
 <body>
 <div id="main_content_wrap" class="outer">
 	 <section id="main_content" class="inner">
-<table class="table-contact">
-<tr>
-<td><img width="200%" class="img-responsive" src="http://localhost:4000/images/toggleLogo2.png" alt="" />
-</td>
-<td>
-This course introduces TOGGLe (Toolbox for Generic NGS Analyses), a framework to quickly build pipelines and to perform large-scale NGS analysis through an easy and user-friendly approach. This tools is developed by the Sout Green platform.
-</td>
-</tr>
-</table>
+<link rel="stylesheet" type="text/css" href="http://localhost:4000/css/slider.css" />
 
-<p><small>TOGGLe, a flexible framework for easily building complex workflows and performing robust large-scale NGS analyses
-Christine Tranchant-Dubreuil, Sebastien Ravel, Cecile Monat, Gautier Sarah, Abdoulaye Di- allo, Laura Helou, Alexis Dereeper, Ndomassi Tando, Julie Orjuela-Bouniol, Francois Sabot. bioRxiv https: //www.biorxiv.org/content/early/2018/01/10/245480.</small></p>
+<ul id="slider" style="display: block; height: 270px; width: 915px; padding: 0px;margin:0px;top:0px; position: relative; overflow: hidden; list-style: outsidenone none;">
 
-<p><a href="http://toggle.southgreen.fr">TOGGle website</a></p>
-
-<h3 id="prerequisites">Prerequisites</h3>
-<p>Basic knowledge of Linux (Linux for dummies required)</p>
-
-<div id="colonne1">
-<h3>Program</h3>
-<ul>
-<li>Why using TOGGLe to analyse NGS data?</li>
-<li>How to perform an analysis with TOGGLe?</li>
-<li>Creating your own workflow with a simple configuration file</li>
-<li>How to execute your own workflow using the command line interface?</li>
-<li>Use case</li>
-</ul>
-</div>
-
-<div id="colonne2">
-<h3>Learning objectives</h3>
-<ul>
-<li>Creating your own workflow</li> 
-<li>Analysing your NGS data with TOGGLe</li>
-</ul>
-</div>
-
-<div id="colonne3">
-<h3>Training material</h3>
-<ul>
-<li>Slides : <a target="_blank" href="http://localhost:4000/files/Workflow2019-TOGGLe.pdf">see</a></li>
-<li>Exercises : <a target="_blank" href="http://localhost:4000/linux/togglePractice">see</a></li>
-
-</ul>
-</div>
-
-<div id="nextInline" class="clearfix">
-<h3>Instructors</h3>
-<ul>
-<li>Christine Tranchant (CT) - christine.tranchant@ird.fr</li>
-<li>Sebastien Ravel (SR) - sebastien.ravel@cirad.fr</li>
-</ul>
-</div>
-
-<h3 id="trainings">Trainings</h3>
-
-<table>
-  <tbody>
-    <tr>
-      <td><strong>Date</strong></td>
-      <td><strong>Location</strong></td>
-      <td><strong>Topics</strong></td>
-      <td><strong>Parrticipants</strong></td>
-      <td><strong>Instructors</strong></td>
-      <td><strong>Links</strong></td>
-      <td><strong>Units</strong></td>
-    </tr>
-    <tr>
-      <td>2017</td>
-      <td>Montpellier, France</td>
-      <td>TOGGLe</td>
-      <td>20</td>
-      <td>CT, SR</td>
-      <td> </td>
-      <td>UMR DIADE, IMPE, MIVEGEC, INTERTRYP</td>
-    </tr>
-  </tbody>
-</table>
+<li class="click click-previous click-closed" style="top: 0px; z-index: 40; margin: 0px; padding: 0px; float: left; display: block; position: absolute; overflow: hidden; width: 750px; height: 270px; text-indent: 0px; left: 132px; cursor: pointer;">
+            <div class="textref textref5">NGS analyses</div>
+            <div>
+                <img srcset="http://galaxy.southgreen.fr/galaxy/static/style/ngs.jpg 362w, http://galaxy.southgreen.fr/galaxy/static/style/ngs.jpg 300w" />
+                <div>
+                    <p>
+                        <strong><a href="">NGS analyses</a></strong><br />
+                    </p>
+                    <p>We propose several workflows for NGS analyses in different scenarii (transcriptome vs
+                        transcriptome, transcriptome vs genome
+                        ...)
+                        <br />It includes cleaning and mapping steps using commonly used softwares.
+                        <br />
+                        <br />
+                        <b>Input</b>: Fastq files + FASTA for reference<br />
+                        <b>Output</b>: BAM alignment files<br />
+                    </p>
+                    <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/marilyne/p/cleaning--mapping" target="_blank">Access workflow</a><br /><br />
+                </div>
+            </div>
+        </li>
+        <!--End NGS Analyses-->
+        <!--Start SNP Calling-->
+        <li class="click click-closed" style="top: 0px; z-index: 0; margin: 0px; padding: 0px; float: left; display: block; position: absolute; overflow: hidden; width: 750px; height: 270px; text-indent: 0px; left: 0px; cursor: pointer;">
+            <div class="textref">SNP calling</div>
+            <div>
+                <img srcset="http://localhost:4000/images/snp_visu_galaxy.PNG 362w, http://localhost:4000/images/snp_visu_galaxy.PNG 300w" />
+                <div>
+                    <p>
+                        <strong><a href="">SNP calling</a></strong><br />
+                    </p>
+                    <p>
+                        The SNP Calling is based on the <b>GATK toolkit</b>, using either UnifiedGenotyper or
+                        HaplotypeCaller module.<br /><br />
+                        <b>Input</b>: BAM alignment files + FASTA for reference<br />
+                        <b>Output</b>: VCF (Variant call Format) file<br />
+                    </p>
+                    <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/snp-calling" target="_blank">Access workflow</a><br /><br />
+                    <p></p>
+                </div>
+            </div>
+        </li>
+    </ul>
 
 
 	</div> <!-- #main -->
 </div> <!-- #main-container -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://localhost:4000/js/jquery-1.11.3.min.js"></script>
+    <script src="http://localhost:4000/js/libs/jquery-1.8.1.min.js"></script>
+    <script src="http://localhost:4000/js/libs/jquery.easing.min.js"></script>
+    <script src="http://localhost:4000/js/jquery.zaccordion.min.js"></script>
     <script src="http://localhost:4000/js/bootstrap.min.js"></script>
     <script src="http://localhost:4000/js/homepage.js"></script>
     <script src="http://localhost:4000/js/libs/modernizr-2.0.6.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#slider").zAccordion({
+                tabWidth: 33,
+                speed: 650,
+                slideClass: 'click',
+                animationStart: function () {
+                    $('#slider').find('li.slider-open div').css('display', 'none');
+                    $('#slider').find('li.slider-previous div').css('display', 'none');
+                },
+                animationComplete: function () {
+                    $('#slider').find('li div').fadeIn(600);
+                },
+                width: 960,
+                height: 270
+            });
+        });
+        </script>
 
 </script>
 
