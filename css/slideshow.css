@@ -84,15 +84,17 @@
     color: white;
   }
   
-  .row:after {
+  .row {
     content: "";
-    display: table;
     clear: both;
+    text-align: center;
+    position: relative;
   }
   
   /* Six columns side by side */
   .column {
-    float: left;
+    display: inline-block;
+    
     width: 50px;
     overflow: hidden;
     height: 50px;
