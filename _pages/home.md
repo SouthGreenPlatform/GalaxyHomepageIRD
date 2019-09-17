@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Galaxy South Green"
-permalink: /
+permalink: /training_home
 tags: [ galaxy  southgreen]
 description: Galaxy South Green welcome page
 ---

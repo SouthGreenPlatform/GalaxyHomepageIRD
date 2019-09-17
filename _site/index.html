@@ -40,7 +40,7 @@
 			<ul id="menu">
         <li><a href="http://localhost:4000/">Home</a></li>
         <li><a href="http://localhost:4000/accordion">Accordion</a></li>
-        <li><a href="http://localhost:4000/slideshow">Slideshow</a></li>
+        <li><a href="http://localhost:4000/training_home">trainings</a></li>
 				<li><a href="#">Linux</a><span class="caret" ></span>
 					<ul id="child">
 						<li><a href="http://localhost:4000/linux/">For Dummies</a></li>
@@ -96,30 +96,198 @@
 <body>
 <div id="main_content_wrap" class="outer">
 	 <section id="main_content" class="inner">
-<p>The <a href="http://www.southgreen.fr/">South Green platform</a> offers a broad range of hands-on training courses focused on bioinformatics and computational biology. These training activities aim at enabling life scientists to effectively handle and interpret biological data. This github repository gives access to all trainings materials produced :</p>
+<p>Our pre-configured and validated workflows</p>
 
-<h4>South Green Trainings in 2019</h4>
-<p><br />
-<a href="http://localhost:4000/trainings2019/">Trainings 2019</a></p>
+<link rel="stylesheet" type="text/css" href="http://localhost:4000/css/slideshow.css" />
 
-<div><center>
-	<a class="btn btn-home" href="http://localhost:4000/linux/"><img width="auto" class="img-responsive" src="http://localhost:4000/images/trainings-linux.png" />Linux for dummies</a>
-	<a class="btn btn-home" href="http://localhost:4000/linuxJedi/"><img width="auto" class="img-responsive" src="http://localhost:4000/images/trainings-linux-advance.png" />Linux for jedi</a>
-	<a class="btn btn-home" href="http://localhost:4000perl/"><img width="auto" class="img-responsive" src="http://localhost:4000/images/trainings-perl.png" alt="PERL" /></a>
-</center></div>
+<!-- Container for the image gallery -->
+<div class="container">
 
-<p><br /></p>
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://galaxy.southgreen.fr/galaxy/static/style/ngs.jpg" />
+        <div class="slidetext">
+            <p><strong><a href="">NGS analyses</a></strong><br /></p>
+            <p>We propose several workflows for NGS analyses in different scenarii (transcriptome vs transcriptome, transcriptome vs genome...)
+            <br />
+            It includes cleaning and mapping steps using commonly used softwares.
+            <br />
+            <br />
+            <b>Input</b>: Fastq files + FASTA for reference<br />
+            <b>Output</b>: BAM alignment files<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/marilyne/p/cleaning--mapping" target="_blank">Access workflow</a>
+            </p>
+        </div> 
+    </div>    
+  </div>
 
-<!--<img width="auto" class="img-responsive" src="http://localhost:4000/images/trainings-map.png"/>-->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://localhost:4000/images/snp_visu_galaxy.PNG" />
+        <div class="slidetext">
+            <p><strong><a href="">SNP calling</a></strong><br /></p>
+            <p>
+            The SNP Calling is based on the <b>GATK toolkit</b>, using either UnifiedGenotyper or HaplotypeCaller module.<br /><br />
+            <b>Input</b>: BAM alignment files + FASTA for reference<br />
+            <b>Output</b>: VCF (Variant call Format) file<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/snp-calling" target="_blank">Access workflow</a>
+            </p><br /><br />
+            <p></p>
+        </div> 
+    </div>    
+  </div>
 
-<h3 id="license">License</h3>
-<div>
-The resource material is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit
-<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">here</a>
-<center>
-<img width="auto" class="img-responsive" src="http://creativecommons.org.nz/wp-content/uploads/2012/05/by-nc-sa1.png" />
-</center></div>
+<div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://galaxy.southgreen.fr/galaxy/static/style/mdsplot.PNG" />
+        <div class="slidetext">
+            <p><strong><a href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/sniplay-workflow" target="_blank">SNP analysis</a></strong><br /></p>
+			<p><b>SNiPlay3</b> complete workflow: a package for exploration and large scale analyses of SNP polymorphisms (filtering, SNP density, diversity, linkagedisequilibrium) (Dereeper et al, 2015) <br /><br />
+            <b>Input</b>: VCF<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/sniplay-statistics-diversity-filtering" target="_blank">Access workflow</a>
+            </p><br /><br />
+            <p></p>
+        </div> 
+    </div>    
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://galaxy.southgreen.fr/galaxy/static/style/Manhattan_Plot.png" />
+        <div class="slidetext">
+            <p><strong><a href="">GWAS</a></strong><br /></p>
+			<p><b>SNiPlay3 GWAS workflow</b>: Tassel-based GWAS workflow (GLM model) including population structure and correction for structure (Dereeper et al, 2015) <br /><br />
+            <b>Input</b>: VCF + Phenotypic tabulated file<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/sniplay-gwas-analysis" target="_blank">Access workflow</a><br /><br />
+            </p>
+            <p></p>
+        </div> 
+    </div>    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://galaxy.southgreen.fr/galaxy/static/style/scaffremodeler.png" />
+        <div class="slidetext">
+            <p><strong>Structural variations</strong><br /></p>
+			<p><b>Scaffremodeler</b> can be used to detect large structural variations between a reference sequence and a resequenced genome (Martin et al, 2016) <br /><br />
+            <b>Input</b>: Fastq + FASTA<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/droc/p/scaffremodler--structural-variation" target="_blank">Access workflow</a><br /><br />
+            </p>
+            <p></p>
+        </div> 
+    </div>    
+  </div>
+
+<div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://galaxy.southgreen.fr/galaxy/static/style/chrom_reconstruction.png" />
+        <div class="slidetext">
+            <p><strong>Chromosome reconstruction</strong><br /></p>
+            <p><b>Scaffrehunter</b> tools assemble scaffolds into pseudomolecules using markers genotyped in a population (Martin et al, 2016) <br /><br />
+            <b>Input</b>: Fastq + FASTA<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/droc/p/scaffhunter--chromosome-reconstruction" target="_blank">Access workflow</a></p><br /><br />
+            <p></p>
+        </div> 
+    </div>    
+  </div>
+  
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://localhost:4000/images/metagenomics.PNG" />
+        <div class="slidetext">
+            <p><strong>Metagenomics</strong><br /></p>
+            <p><b>FROGS</b>: Find Rapidly OTU with Galaxy Solution (Pascal et al, 2015) <br /><br />
+            <b>Input</b>: Fastq files<br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/frogs" target="_blank">Access workflow</a><br /><br />
+            </p>
+            <p></p>
+        </div> 
+    </div>    
+  </div>
+
+<div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://galaxy.southgreen.fr/galaxy/static/style/tree.jpg" />
+        <div class="slidetext">
+            <p><strong>Gene families</strong><br /></p>
+            <p><b>Greenphyl / GenFam</b>: comparative and functional genomics in plants (Rouard et al, 2011).<br /><br />
+            <b>Input</b>: FASTA file, Species tree file<br /><br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/jfdufayard/p/phylogeny-workflows-1" target="_blank">Access workflow</a><br /><br />
+            </p>
+            <p></p>
+        </div> 
+    </div>    
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <div class="slidecontainer">
+        <img class="slideimg" src="http://localhost:4000/images/circos.jpg" />
+        <div class="slidetext">
+            <p><strong>Mosaic genome reconstruction</strong><br /></p>
+            <p><b>TraceAncestor / KDE_Classifier</b>: Two approaches to analyze the mosaic structure of plant genomes<br /><br />
+            <b>Input</b>: VCF file + structure file<br /><br />
+            <a class="readmore1" href="http://galaxy.southgreen.fr/galaxy/u/acomte/p/reconstruction-of-mosaic-genomes" target="_blank">Access workflow</a><br /><br />
+            </p>
+            <p></p>
+        </div> 
+    </div>    
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="http://galaxy.southgreen.fr/galaxy/static/style/ngs.jpg" style="width:100%" onclick="currentSlide(1)" alt="NGS Analysis" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://localhost:4000/images/snp_visu_galaxy.PNG" style="width:100%" onclick="currentSlide(2)" alt="SNP calling" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://galaxy.southgreen.fr/galaxy/static/style/mdsplot.PNG" style="width:100%" onclick="currentSlide(3)" alt="SNP analysis" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://galaxy.southgreen.fr/galaxy/static/style/Manhattan_Plot.png" style="width:100%" onclick="currentSlide(4)" alt="GWAS" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://galaxy.southgreen.fr/galaxy/static/style/scaffremodeler.png" style="width:100%" onclick="currentSlide(5)" alt="Structural variations" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://galaxy.southgreen.fr/galaxy/static/style/chrom_reconstruction.png" style="width:100%" onclick="currentSlide(6)" alt="Chromosome reconstruction" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://localhost:4000/images/metagenomics.PNG" style="width:100%" onclick="currentSlide(7)" alt="Metagenomics" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://galaxy.southgreen.fr/galaxy/static/style/tree.jpg" style="width:100%" onclick="currentSlide(8)" alt="Gene families" />
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://localhost:4000/images/circos.jpg" style="width:100%" onclick="currentSlide(9)" alt="Mosaic genome reconstruction" />
+    </div>
+
+
+    
+    
+  </div>
+</div>
 
 	</div> <!-- #main -->
 </div> <!-- #main-container -->
@@ -128,6 +296,51 @@ The resource material is licensed under the Creative Commons Attribution 4.0 Int
     <script src="http://localhost:4000/js/bootstrap.min.js"></script>
     <script src="http://localhost:4000/js/homepage.js"></script>
     <script src="http://localhost:4000/js/libs/modernizr-2.0.6.min.js"></script>
+    <script type="text/javascript">
+
+var slideIndex = 1;
+let maxIteration =666;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+
+  if (maxIteration===0){
+    return;
+  }else{
+    maxIteration--;
+    setTimeout('plusSlides(1)', 5000);
+  }
+
+
+}
+
+
+        </script>
 
 </script>
 
