@@ -671,6 +671,14 @@ div#greenColorBlock{
   background-color:#fff;
 }
 
+div#blackColorBlock{
+  display:inline-block;  
+  text-align:center; 
+  border:2px dashed black; 
+  padding:15px; 
+  background-color:#fff;
+}
+
 .replie {
     margin: 10px;
 }
