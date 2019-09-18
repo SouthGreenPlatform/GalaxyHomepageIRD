@@ -8,6 +8,8 @@ description: Galaxy South Green welcome page
 
 {% include slideshow.html %}
 
+{% include dashboard.html %}
+
 <div style='text-align:center;'>
     <div id='blackColorBlock'>
         <h3 style='font-size:22px;'>How to load big datasets ? </h3>
@@ -38,3 +40,4 @@ Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, M
 </p>
     </div>
 </div>
+
