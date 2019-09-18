@@ -112,7 +112,6 @@ strong {
   vertical-align: middle;
   text-align: center;
   border: none;
-  width: 33%;
 }
 
 pre, code {
@@ -511,7 +510,6 @@ contact styles
 .team-name{
 	text-align: center;
 	display:block;
-	vertical-align:center;
 	color:#2e6da4;
 	font-size:20px;
 }
@@ -603,7 +601,6 @@ div#colonne3
 */
 div#colonne1
 {
-	float: left;
 	background: lightblue;
 	display: inline-block;
 	height: auto;
@@ -617,7 +614,6 @@ div#colonne1
 
 div#colonne2
 {
-	float: left;
 	background: khaki;
 	display: inline-block;
 	height: auto;
@@ -631,7 +627,6 @@ div#colonne2
 }
 div#colonne3
 {
-	float: left;
 	background: burlywood;
 	display: inline-block;
 	height: auto;
