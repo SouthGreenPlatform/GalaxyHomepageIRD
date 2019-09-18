@@ -39,7 +39,6 @@
           <div id="navbar" class="navbar-collapse collapse">
 			<ul id="menu">
         <li><a href="http://localhost:4000/">Home</a></li>
-        <li><a href="http://localhost:4000/accordion">Accordion</a></li>
         <li><a href="http://localhost:4000/training_home">trainings</a></li>
 				<li><a href="#">Linux</a><span class="caret" ></span>
 					<ul id="child">
@@ -86,10 +85,12 @@
       </nav>
       <!--/.nav-collapse -->
     <!-- Header -->
-    <div id="header_wrap" class="outer">
+    <div id="header_galaxy" class="outer">
         <header class="inner">
-          <div class="header"><img class="img-responsive" width="25%" src="http://localhost:4000/images/southgreenlong.png" alt="South Green Logo" /></div>
-          <h2 id="project_tagline">Welcome to <img style="width: 26px; vertical-align: top;" src="http://localhost:4000/images/galaxyIcon_noText.png"> Galaxy</h2>
+          <div class="header">
+            <img width="40%" src="http://localhost:4000/images/southgreenlong.png" alt="South Green Logo" />
+            <h2 id="project_tagline">Welcome to <img style="width: 26px; vertical-align: top;" src="http://localhost:4000/images/galaxyIcon_noText.png"> Galaxy</h2>
+          </div>
         </header>
     </div>
 
@@ -282,11 +283,29 @@
     <div class="column">
       <img class="demo cursor" src="http://localhost:4000/images/circos.jpg" style="width:100%" onclick="currentSlide(9)" alt="Mosaic genome reconstruction" />
     </div>
-
-
-    
-    
   </div>
+</div>
+
+<p style="font-weight:bold; font-size:13px;">These workflows as part of the services provided by <a target="_blank" href="http://www.southgreen.fr/">South Green</a></p>
+<p><br /></p>
+
+<div style="text-align:center;">
+<h3 style="font-size:22px;">How to load big datasets? </h3>
+<a target="_blank" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/howtoload"><img src="http://localhost:4000/images/procedure_load_FTP.png" width="600" /></a>
+
+<div id="orangeColorBlock">
+    <img src="http://localhost:4000/images/bulb.png" />&nbsp;In order to <b>figure out which tools were made available by our team</b>, please activate the "tool search" functionality from the Options drop-down and type "south green" in the lookup filter.
+</div>
+<div id="greenColorBlock">
+    <img src="http://localhost:4000/images/mail.gif" />&nbsp;Any inquiries or Requests for <b>making new tools available</b> shall be addressed to
+    <script language="javascript">
+        DOT = '.';
+        AT = '@';
+        DASH = '-';
+        emailE = ('galaxy' + DASH + 'dev' + DASH + 'southgreen' + AT + 'cirad' + DOT + 'fr')
+        document.write('<A HREF="mailto:' + emailE + '">' + emailE + '</a>');
+    </script>
+</div>
 </div>
 
 	</div> <!-- #main -->

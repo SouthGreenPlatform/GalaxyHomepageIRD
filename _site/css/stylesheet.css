@@ -322,6 +322,13 @@ Full-Width Styles
   background: #DDD9C5;
   height:  180px;
 }
+#header_galaxy {
+  background-image: url('../images/bg_home.gif') ;
+  background-repeat: repeat-x;
+  background-size : contain;
+  border-bottom: 1rem solid #F49831;
+
+}
 
 #header_wrap .inner {
   padding: 20px 10px 30px 10px;
@@ -354,6 +361,7 @@ div.header {
   clear: both;
   display: block;
   margin: auto;
+  text-align: center;
 }
 
 .zip_download_link {
@@ -642,6 +650,26 @@ div#nextInline
 
 }
 
+
+/* Galaxy South Green  */
+
+div#orangeColorBlock{
+  display:inline-block; 
+  width:320px; 
+  text-align:left; 
+  border:2px dashed #f2961b; 
+  padding:15px; 
+  margin-bottom:25px; 
+  background-color:#fff;
+}
+div#greenColorBlock{
+  display:inline-block; 
+  width:320px; 
+  text-align:center; 
+  border:2px dashed #7DA90A; 
+  padding:15px; 
+  background-color:#fff;
+}
 
 .replie {
     margin: 10px;
