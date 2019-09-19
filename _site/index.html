@@ -25,7 +25,7 @@
  <body>
 
       <!-- Static navbar -->
-      <nav class="navbar navbar-default navbar-inverse navbar-static-top">
+      <nav class="navbar navbar-default navbar-inverse navbar-static-top" style="margin-bottom:0px">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -290,9 +290,27 @@
 <p style="text-align:center; font-weight:bold; font-size:13px;">These workflows as part of the services provided by <a target="_blank" href="http://www.southgreen.fr/">South Green</a></p>
 <p><br /></p>
 
-<div data-netdata="netdata.web_thread1_cpu" data-title="Web thread 1 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="30%" data-after="-60" data-points="60" data-colors="#558855"></div>
+<div class="container">
+    <div class="row">
+        <div class="col" data-netdata="netdata.web_thread1_cpu" data-title="Web thread 1 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
+        <div class="col" data-netdata="netdata.web_thread2_cpu" data-title="Web thread 2 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
+        <div class="col" data-netdata="netdata.web_thread3_cpu" data-title="Web thread 3 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
+        <div class="col" data-netdata="netdata.web_thread4_cpu" data-title="Web thread 4 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
+        <div class="col" data-netdata="netdata.web_thread5_cpu" data-title="Web thread 5 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
+        <div class="col" data-netdata="netdata.web_thread6_cpu" data-title="Web thread 6 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>        
+    </div>
 
-<div data-netdata="netdata.web_thread1_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="30%" data-height="30px" data-after="-60" data-points="60" data-colors="#FF5555"></div>
+    <div class="row">
+        <div class="col" data-netdata="netdata.web_thread1_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="10%" data-height="30px" data-after="-60" data-points="60" data-colors="#F49831"></div>
+        <div class="col" data-netdata="netdata.web_thread2_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="10%" data-height="30px" data-after="-60" data-points="60" data-colors="#F49831"></div>
+        <div class="col" data-netdata="netdata.web_thread3_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="10%" data-height="30px" data-after="-60" data-points="60" data-colors="#F49831"></div>
+        <div class="col" data-netdata="netdata.web_thread4_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="10%" data-height="30px" data-after="-60" data-points="60" data-colors="#F49831"></div>
+        <div class="col" data-netdata="netdata.web_thread5_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="10%" data-height="30px" data-after="-60" data-points="60" data-colors="#F49831"></div>
+        <div class="col" data-netdata="netdata.web_thread6_cpu" data-dimensions="user" data-chart-library="dygraph" data-dygraph-theme="sparkline" data-width="10%" data-height="30px" data-after="-60" data-points="60" data-colors="#F49831"></div>
+
+    </div>
+</div>
+
 <script type="text/javascript" src="http://195.221.173.202:19999/dashboard.js"></script>
 
 <div style="text-align:center;">
