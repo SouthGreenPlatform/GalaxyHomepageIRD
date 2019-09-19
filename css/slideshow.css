@@ -7,6 +7,7 @@
     height: 300px;
     font-size: 0;
     border: double;
+    background-color: white;
   }
 
   .slideimg{
@@ -109,15 +110,16 @@
   
   /* Add a transparency effect for thumnbail images */
   .demo {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
     /*opacity: 0.6;*/
     /*border-radius: 50%;*/
-
-    
   }
+  
   
   .active,
   .demo:hover {
-    opacity: 1;
+    opacity: 0.6;
+    filter: brightness(50%)
+    
   }
