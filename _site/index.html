@@ -290,7 +290,8 @@
 <p style="text-align:center; font-weight:bold; font-size:13px;">These workflows as part of the services provided by <a target="_blank" href="http://www.southgreen.fr/">South Green</a></p>
 <p><br /></p>
 
-<div class="container">
+<div class="container" id="blackColorBlock">
+    <p> Web Thread CPU</p><br /><br />
     <div class="row">
         <div class="col" data-netdata="netdata.web_thread1_cpu" data-title="Web thread 1 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
         <div class="col" data-netdata="netdata.web_thread2_cpu" data-title="Web thread 2 CPU" data-chart-library="gauge" data-decimal-digits="0" data-common-max="top-gauges" data-width="10%" data-after="-60" data-points="60" data-colors="#55B33C"></div>
@@ -310,8 +311,8 @@
 
     </div>
 </div>
-
-<script type="text/javascript" src="http://195.221.173.202:19999/dashboard.js"></script>
+<p><br />
+<script type="text/javascript" src="http://195.221.173.202:19999/dashboard.js"></script></p>
 
 <div style="text-align:center;">
     <div id="blackColorBlock">
@@ -356,6 +357,7 @@ Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, M
 
 var slideIndex = 1;
 let maxIteration =666;
+var timer;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -389,7 +391,12 @@ function showSlides(n) {
     return;
   }else{
     maxIteration--;
-    setTimeout('plusSlides(1)', 5000);
+    if (timer) {
+      clearTimeout(timer); //cancel the previous timer.
+      timer = null;
+    }
+    timer = setTimeout('plusSlides(1)', 5000);
+    
   }
 
 
