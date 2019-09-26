@@ -12,6 +12,10 @@ description: Galaxy South Green welcome page
 
 <div style='text-align:center;'>
     <div id='blackColorBlock'>
+        {% include register.html %}
+    </div>
+    <p><br/></p>
+    <div id='blackColorBlock'>
         <h3 style='font-size:22px;'>How to load big datasets ? </h3>
         <a target="_blank" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/howtoload"><img src="{{ site.url }}/images/procedure_load_FTP.png" width="600"></a>
     </div>
@@ -40,4 +44,5 @@ Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, M
 </p>
     </div>
 </div>
+<div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a></div>
 
