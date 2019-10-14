@@ -25,13 +25,9 @@ version: 0.1
 # authors
 authors:
   ravel:
-    name: Sébastien RAVEL
-    display_name: Sebastien RAVEL
-    email: sebastien.ravel@cirad.fr
-  tranchant:
-    name: Christine Tranchant-Dubreuil
-    display_name: Christine Tranchant-Dubreuil
-    email: christine.tranchant@ird.fr
+    name: Marilyne Summo
+    display_name: Marilyne Summo
+    email: marilyne.summo@cirad.fr
 
 # Build settings
 theme: minima
