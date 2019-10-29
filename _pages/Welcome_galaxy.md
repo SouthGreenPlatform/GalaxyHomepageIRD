@@ -11,11 +11,11 @@ description: Galaxy South Green welcome page
 {% include dashboard.html %}
 
 <div style='text-align:center;'>
-    <div id='blackColorBlock'>
+    <div class='container' id='blackColorBlock'>
         {% include register.html %}
     </div>
     <p><br/></p>
-    <div id='blackColorBlock'>
+    <div class='container' id='blackColorBlock'>
         <h3 style='font-size:22px;'>How to load big datasets ? </h3>
         <a target="_blank" href="http://galaxy.southgreen.fr/galaxy/u/dereeper/p/howtoload"><img src="{{ site.url }}/images/procedure_load_FTP.png" width="600"></a>
     </div>
@@ -35,7 +35,10 @@ description: Galaxy South Green welcome page
             </script>
         </div>
     </div>
-    <div id='blackColorBlock'>
+    <div class='container' id='blackColorBlock'>
+        {% include good_practices.html %}
+    </div>
+    <div class='container' id='blackColorBlock'>
         <h3 style='font-size:22px;'>How to cite ? </h3>
         <p style='text-align=justify'>If you use South Green Galaxy in your published work, please cite this publication :<br/><br/>
 “The authors acknowledge the South Green Platform (http://www.southgreen.fr) for providing the galaxy instance (http://galaxy.southgreen.fr/galaxy/) that have contributed to the research results reported within this paper.”
