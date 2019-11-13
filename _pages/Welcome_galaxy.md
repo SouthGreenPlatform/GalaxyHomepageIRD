@@ -36,9 +36,8 @@ description: Galaxy South Green welcome page
         </div>
     </div>
     <div class='container' id='blackColorBlock'>
-        {% include good_practices.html %}
-    </div>
-    <div class='container' id='blackColorBlock'>
+        {% include best_practices.html %}
+        <br/>
         <h3 style='font-size:22px;'>How to cite ? </h3>
         <p style='text-align=justify'>If you use South Green Galaxy in your published work, please cite this publication :<br/><br/>
 “The authors acknowledge the South Green Platform (http://www.southgreen.fr) for providing the galaxy instance (http://galaxy.southgreen.fr/galaxy/) that have contributed to the research results reported within this paper.”
