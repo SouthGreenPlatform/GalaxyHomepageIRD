@@ -41,7 +41,7 @@ h1 {
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('{{ site.url }}/images/bg_hr.png') repeat-x bottom;
+  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
@@ -176,7 +176,7 @@ hr {
   height: 1px;
   margin-bottom: 5px;
   border: none;
-  background: url('{{ site.url }}/images/bg_hr.png') repeat-x center;
+  background: url('../images/bg_hr.png') repeat-x center;
 }
 
 table {
@@ -314,7 +314,7 @@ Full-Width Styles
 #forkme_banner {
   padding: 5px 40px 5px 5px;
   color: #fff;
-  background: url('{{ site.url }}/images/blacktocat.png') #0090ff no-repeat 95% 50%;
+  background: url('../images/blacktocat.png') #0090ff no-repeat 95% 50%;
 }
 
 #header_wrap {
@@ -322,7 +322,7 @@ Full-Width Styles
   height:  180px;
 }
 #header_galaxy {
-  background-image: url('{{ site.url }}/images/bg_home.gif') ;
+  background-image: url('../images/bg_home.gif') ;
   background-repeat: repeat-x;
   background-size : contain;
   border-bottom: 1rem solid #F49831;
@@ -339,7 +339,7 @@ Full-Width Styles
   color: #fff;
   font-size: 120px;
   text-indent: -5000px;
-  background: url('{{ site.url }}/images/toggleLogo.png') no-repeat 0% 100%;
+  background: url('../images/toggleLogo.png') no-repeat 0% 100%;
 }
 
 #project_tagline {
@@ -534,7 +534,7 @@ contact styles
 
  .puce li  {
     list-style-type: none; /* on annule la puce par défaut */
-    background-image: url('{{ site.url }}/images/puce.png'); /* on affiche l'image souhaitée */
+    background-image: url('../images/puce.png'); /* on affiche l'image souhaitée */
     background-size: 15px 15px;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     background-position: left center; /* on positionne où l'on veut */
@@ -545,7 +545,7 @@ contact styles
 
  .puce2 li  {
     list-style-type: none; /* on annule la puce par défaut */
-    background-image: url('{{ site.url }}/images/puce.png'); /* on affiche l'image souhaitée */
+    background-image: url('../images/puce.png'); /* on affiche l'image souhaitée */
     background-size: 15px 15px;
     background-repeat: no-repeat; /* on annule la répétition par défaut */
     background-position: left center; /* on positionne où l'on veut */
