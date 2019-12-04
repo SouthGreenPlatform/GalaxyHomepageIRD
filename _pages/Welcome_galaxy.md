@@ -8,7 +8,7 @@ description: Galaxy South Green welcome page
 
 {% include slideshow.html %}
 
-{% include dashboard.html %}
+{% include video.html %}
 
 <div style='text-align:center;'>
     <div class='container' id='blackColorBlock'>
