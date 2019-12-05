@@ -30,7 +30,7 @@ description: Galaxy South Green welcome page
                 DOT = '.';
                 AT = '@';
                 DASH = '-';
-                emailE = ('galaxy' + DASH + 'dev' + DASH + 'southgreen' + AT + 'cirad' + DOT + 'fr')
+                emailE = ('bioinfo' + AT + 'ird' + DOT + 'fr')
                 document.write('<A HREF="mailto:' + emailE + '">' + emailE + '</a>');
             </script>
         </div>
@@ -39,8 +39,8 @@ description: Galaxy South Green welcome page
         {% include best_practices.html %}
         <br/>
         <h3 style='font-size:22px;'>How to cite ? </h3>
-        <p style='text-align=justify'>If you use South Green Galaxy in your published work, please cite this publication :<br/><br/>
-“The authors acknowledge the South Green Platform (http://www.southgreen.fr) for providing the galaxy instance (http://galaxy.southgreen.fr/galaxy/) that have contributed to the research results reported within this paper.”
+        <p style='text-align=justify'>This Galaxy instance is hosted by the IRD bioinformatics computing cluster. If you use South Green Galaxy in your published work, please cite this publication :<br/><br/>
+“The  authors  acknowledge  the  South  Green  Platform  (http://www.southgreen.fr)  for  providing  the  galaxy instance  (https://itrop-galaxy.ird.fr/)  that  have  contributed  to  the research results reported within this paper.”  
 <br/><br/>
 Enis Afgan, Dannon Baker, Bérénice Batut, Marius van den Beek, Dave Bouvier, Martin Čech, John Chilton, Dave Clements, Nate Coraor, Björn Grüning, Aysam Guerler, Jennifer Hillman-Jackson, Vahid Jalili, Helena Rasche, Nicola Soranzo, Jeremy Goecks, James Taylor, Anton Nekrutenko, and Daniel Blankenberg. The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update, Nucleic Acids Research, Volume 46, Issue W1, 2 July 2018, Pages W537–W544, doi:10.1093/nar/gky379
 </p>
